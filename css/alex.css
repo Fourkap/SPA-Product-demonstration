@@ -16,6 +16,13 @@
     fill:red;
   
   }
+  .te:hover{
+    fill: white!important;
+  }
+
+  .tet:hover{
+    fill: royalblue!important;
+  }
     /* HOVER STYLES */
     div#pop-up {
         display: none;
