@@ -4,25 +4,30 @@
     padding-top: 20%;
     position: relative;
   }
-  
+
   .svg--responsive {
     position: absolute;
     top: 0;
     left: 0;
   }
-  
+
   .fil3d:hover{
-  
+
     fill:red;
-  
+
   }
   .te:hover{
     fill: white!important;
   }
-
-  .tet:hover{
-    fill: royalblue!important;
+/*
+  .tet:hover * {fill: Transparent}
+  #a:hover{
+    fill:blue;
   }
+  #b:hover{
+    fill:Transparent;
+  } */
+
     /* HOVER STYLES */
     div#pop-up {
         display: none;
@@ -37,7 +42,7 @@
 
 .headermodif{
     background-color: red!important;
-}        
+}
 
 .bg-dark{
   background-color: #E60012!important;
