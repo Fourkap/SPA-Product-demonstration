@@ -1,51 +1,91 @@
 .container--ph {
-    height: 0;
-    width: 70%;
-    padding-top: 20%;
-    position: relative;
-  }
-
-  .svg--responsive {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .fil3d:hover{
-
-    fill:red;
-
-  }
-  .te:hover{
-    fill: white!important;
-  }
-/*
-  .tet:hover * {fill: Transparent}
-  #a:hover{
-    fill:blue;
-  }
-  #b:hover{
-    fill:Transparent;
-  } */
-
-    /* HOVER STYLES */
-    div#pop-up {
-        display: none;
-        position: absolute;
-        width: 280px;
-        padding: 10px;
-        background: #eeeeee;
-        color: #000000;
-        border: 1px solid #1a1a1a;
-        font-size: 90%;
-        }
-
-.headermodif{
-    background-color: red!important;
+  height: 0;
+  width: 70%;
+  padding-top: 20%;
+  position: relative;
 }
 
-.bg-dark{
-  background-color: #E60012!important;
+.svg--responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fil3d:hover {
+  fill: red;
+}
+
+.fil3g:hover {
+  fill: #0663c1;
+}
+
+.fil8a:hover {
+  fill: blue;
+}
+
+.fil8y:hover {
+  fill: blue;
+}
+
+.fil8x:hover {
+  fill: blue;
+}
+
+#a:hover {
+  fill: blue;
+}
+
+.fil12:hover {
+  fill: blue;
+}
+
+.te:hover {
+  fill: white !important;
+}
+.st:hover{
+  fill: white !important;
+}
+
+/* HOVER STYLES */
+div#pop-up {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+div#pop-up1 {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+div#pop-up2 {
+  display: none;
+  position: absolute;
+  width: 180px;
+  padding: 8px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
+.headermodif {
+  background-color: red !important;
+}
+
+.bg-dark {
+  background-color: #E60012 !important;
 }
 
 header {
@@ -88,7 +128,7 @@ header .overlay {
   z-index: 1;
 }
 
-.titre-guide{
+.titre-guide {
   color: red;
   font-family: 'Inconsolata', monospace;
 }
