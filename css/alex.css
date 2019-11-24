@@ -45,6 +45,18 @@
 .st:hover{
   fill: white !important;
 }
+.tf:hover{
+  fill: white !important;
+}
+.ff:hover{
+  fill: white !important;
+}
+.fil6l:hover{
+  fill: blue;
+}
+.fil2:hover{
+   fill: blue; 
+}
 
 /* HOVER STYLES */
 div#pop-up {

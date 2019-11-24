@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Nitendo Switch</title>
+  <title>Nintendo Switch</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -82,10 +82,14 @@
               .fil4 {fill:#2B2C2E}
               .fil0 {fill:#30363A}
               .fil8 {fill:#56616A}
+              .fil8d {fill:#56616A}
+              .fil8r {fill:#56616A}
+              .fil8h {fill:#56616A}
               .fil8b {fill:#56616A}
               .fil8a {fill:#56616A}
               .fil8x {fill:#56616A}
               .fil8y {fill:#56616A}
+              .fil6l {fill:#56616A}
               .fil3g {fill:#00BDDD}
               .fil3d {fill:#FD5F53}
               .fil7 {fill:#B5C0C7}
@@ -114,27 +118,37 @@
              <path class="fil0 str0" d="M0 2317c0,-1274 1043,-2317 2317,-2317l0 2317 -2317 0z"/>
              <path class="fil0 str0" d="M4020 77l17732 0c0,209 154,385 355,418l0 10361 -18511 0 0 -10356c233,0 424,-190 424,-423z"/>
              <path class="fil1 str0" d="M4398 421l17055 0c124,0 225,101 225,225l0 9498c0,124 -101,225 -225,225l-1057 0 0 -96c0,-59 -48,-106 -106,-106l-648 0c-58,0 -106,47 -106,106l0 96 -9484 0 0 -243c0,-80 -84,-146 -189,-146 -104,0 -188,66 -188,146l0 243 -3360 0 0 -96c0,-59 -48,-106 -106,-106l-648 0c-59,0 -106,47 -106,106l0 96 -1057 0c-124,0 -225,-101 -225,-225l0 -9498c0,-124 101,-225 225,-225z"/>
-             <rect class="fil2 str0" x="5485" y="1204" width="14732" height="8297"/>
+             <rect class="fil2 str0" id="trigger" x="5485" y="1204" width="14732" height="8297"/>
              <path class="fil3d str0"  id="trigger"  d="M22107 77l997 0c1257,0 2286,1029 2286,2286l0 6207c0,1257 -1029,2286 -2286,2286l-997 0 0 -10779z"/>
              <path class="fil3g str0" id="trigger" d="M2354 77l1228 0 0 10779 -1228 0c-1257,0 -2286,-1029 -2286,-2286l0 -6207c0,-1257 1029,-2286 2286,-2286z"/>
              <rect class="fil4 str0" x="2735" y="949" width="566" height="201"/>
              <circle class="fil5 str1" cx="1846" cy="2669" r="841"/>
-             <circle class="fil6 str1" cx="1846" cy="2669" r="674"/>
+             <circle class="fil6l str1"id="trigger" cx="1846" cy="2669" r="674"/>
              <circle class="fil7 str0" cx="23061" cy="7897" r="421"/>
-             <circle class="fil8 str0" cx="1915" cy="4859" r="392"/>
-             <circle class="fil8 str0" cx="2793" cy="5669" r="392"/>
+
+              <g class="ff" id="trigger">
+                <circle class="fil8r str0" cx="2793" cy="5669" r="392"/>
+                <polygon class="fil9r str0" points="2960,5669 2835,5741 2710,5813 2710,5669 2710,5525 2835,5597 "/>
+              </g>
 
 
-             <polygon class="fil9 str0" points="1915,4693 1987,4818 2059,4943 1915,4943 1770,4943 1842,4818 "/>
-             <polygon class="fil9 str0" points="2960,5669 2835,5741 2710,5813 2710,5669 2710,5525 2835,5597 "/>
+            <g class="tf" id="trigger">
+              <circle class="fil8h str0" cx="1915" cy="4859" r="392"/>
+              <polygon class="fil9h str0" points="1915,4693 1987,4818 2059,4943 1915,4943 1770,4943 1842,4818 "/>
+            </g>
 
-             <g class="te">
+
+
+
+
+
+             <g class="te" id="trigger">
                 <circle class="fil8b str0" id="trigger" cx="1920" cy="6489" r="392"/>
                 <polygon class="fil9b str0" points="1920,6656 1848,6531 1776,6406 1920,6406 2064,6406 1992,6531 "/>
              </g>
-             <g class="st">
-              <polygon class="fil9 str0" id="trigger" points="917,5674 1042,5602 1167,5530 1167,5674 1167,5819 1042,5746 "/>
+             <g class="st" id="trigger">
               <circle class="fil8d str0" cx="1084" cy="5674" r="392"/>
+              <polygon class="fil9d str0" id="trigger" points="917,5674 1042,5602 1167,5530 1167,5674 1167,5819 1042,5746 "/>
             </g>
 
              <rect class="fil8 str0" x="2184" y="7375" width="667" height="667" rx="53" ry="53"/>
@@ -214,6 +228,7 @@
     <h3>Pop-up div Successfully Displayed</h3>
 
   </div>
+
   <script type="text/javascript">
     $(function() {
       var moveLeft = 20;
@@ -293,6 +308,72 @@
         });
 
         $('.fil12#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Ecran
+        $('.fil2#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.fil2#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Joystick gauche
+        $('.fil6l#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.fil6l#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Fleche droit
+        $('.ff#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.ff#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Fleche haut
+        $('.tf#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.tf#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Fleche gauche
+        $('.st#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.st#trigger').mousemove(function(e) {
+          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+
+        //Fleche bas
+        $('.te#trigger').hover(function(e) {
+          $('div#pop-up2').show();
+        }, function() {
+          $('div#pop-up2').hide();
+        });
+
+        $('.te#trigger').mousemove(function(e) {
           $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
     });
