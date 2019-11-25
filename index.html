@@ -130,18 +130,10 @@
                 <circle class="fil8r str0" cx="2793" cy="5669" r="392"/>
                 <polygon class="fil9r str0" points="2960,5669 2835,5741 2710,5813 2710,5669 2710,5525 2835,5597 "/>
               </g>
-
-
             <g class="tf" id="trigger">
               <circle class="fil8h str0" cx="1915" cy="4859" r="392"/>
               <polygon class="fil9h str0" points="1915,4693 1987,4818 2059,4943 1915,4943 1770,4943 1842,4818 "/>
             </g>
-
-
-
-
-
-
              <g class="te" id="trigger">
                 <circle class="fil8b str0" id="trigger" cx="1920" cy="6489" r="392"/>
                 <polygon class="fil9b str0" points="1920,6656 1848,6531 1776,6406 1920,6406 2064,6406 1992,6531 "/>
@@ -208,25 +200,64 @@
     </div>
   </section>
 
-  <div id="pop-up">
-    <h3>Pop-up div Successfully Displayed</h3>
+  <div class="pop-up" id="pop-up">
+    <h3>Joycon droit (rouge)</h3>
     <p>
-      This div only appears when the trigger link is hovered over. Otherwise
-      it is hidden from view.
+      Ceci est le joycon droit (rouge) il se slide sur la console.
+    </p>
+    <img src="img/joycon_droit.jpg" />
+  </div>
+
+  <div class="pop-up" id="bouton-b">
+    <h3>Bouton B</h3>
+    <p>
+      Ceci est le bouton B de la console.
     </p>
   </div>
 
-  <div id="pop-up1">
-    <h3>Pop-up div Successfully Displayed</h3>
+  <div class="pop-up" id="bouton-a">
+    <h3>Bouton A</h3>
     <p>
-      This div only appears when the trigger link is hovered over. Otherwise
-      it is hidden from view.
+        Ceci est le bouton A de la console.
     </p>
   </div>
 
-  <div id="pop-up2">
-    <h3>Pop-up div Successfully Displayed</h3>
+  <div class="pop-up" id="bouton-y">
+    <h3>Bouton Y</h3>
+    <p>
+        Ceci est le bouton Y de la console.
+    </p>
+  </div>
 
+  <div class="pop-up" id="bouton-x">
+    <h3>Bouton X</h3>
+    <p>
+        Ceci est le bouton X de la console.
+    </p>
+  </div>
+
+  <div class="pop-up" id="joystick-droit">
+    <h3>Joystick droit</h3>
+    <p>
+        Ceci est le joystick droit de la console.
+    </p>
+    <img src="img/joystick.jpg" width="100px;"/>
+  </div>
+
+  <div class="pop-up" id="joystick-gauche">
+    <h3>Joystick gauche</h3>
+    <p>
+        Ceci est le joystick gauche de la console.
+    </p>
+<img src="img/joystick.jpg"  width="100px;"/>
+  </div>
+
+  <div class="pop-up" id="joycon-gauche">
+    <h3>Joycon gauche (bleu)</h3>
+    <p>
+        Ceci est le joycon gauche (bleu) il se slide sur la console.
+    </p>
+<img src="img/joycon_gauche.jpg"  width="100px;"/>
   </div>
 
   <script type="text/javascript">
@@ -247,68 +278,68 @@
 
         //joycon gauche
         $('.fil3g#trigger').hover(function(e) {
-          $('div#pop-up1').show();
+          $('div#joycon-gauche').show();
         }, function() {
-          $('div#pop-up1').hide();
+          $('div#joycon-gauche').hide();
         });
 
         $('.fil3g#trigger').mousemove(function(e) {
-          $("div#pop-up1").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#joycon-gauche").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //bouton b
         $('.fil8b#a').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#bouton-b').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#bouton-b').hide();
         });
 
         $('.fil8b#a').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#bouton-b").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //bouton y
         $('.fil8y#trigger').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#bouton-y').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#bouton-y').hide();
         });
 
         $('.fil8y#trigger').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#bouton-y").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //bouton x
         $('.fil8x#trigger').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#bouton-x').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#bouton-x').hide();
         });
 
         $('.fil8x#trigger').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#bouton-x").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //bouton a
         $('.fil8a#trigger').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#bouton-a').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#bouton-a').hide();
         });
 
         $('.fil8a#trigger').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#bouton-a").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //joystick droit
         $('.fil12#trigger').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#joystick-droit').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#joystick-droit').hide();
         });
 
         $('.fil12#trigger').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#joystick-droit").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //Ecran
@@ -324,13 +355,13 @@
 
         //Joystick gauche
         $('.fil6l#trigger').hover(function(e) {
-          $('div#pop-up2').show();
+          $('div#joystick-gauche').show();
         }, function() {
-          $('div#pop-up2').hide();
+          $('div#joystick-gauche').hide();
         });
 
         $('.fil6l#trigger').mousemove(function(e) {
-          $("div#pop-up2").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+          $("div#joystick-gauche").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
 
         //Fleche droit

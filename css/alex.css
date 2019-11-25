@@ -55,38 +55,16 @@
   fill: blue;
 }
 .fil2:hover{
-   fill: blue; 
+   fill: blue;
 }
 
 /* HOVER STYLES */
-div#pop-up {
+.pop-up {
   display: none;
   position: absolute;
   width: 280px;
   padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border: 1px solid #1a1a1a;
-  font-size: 90%;
-}
-
-div#pop-up1 {
-  display: none;
-  position: absolute;
-  width: 280px;
-  padding: 10px;
-  background: #eeeeee;
-  color: #000000;
-  border: 1px solid #1a1a1a;
-  font-size: 90%;
-}
-
-div#pop-up2 {
-  display: none;
-  position: absolute;
-  width: 180px;
-  padding: 8px;
-  background: #eeeeee;
+  background: grey;
   color: #000000;
   border: 1px solid #1a1a1a;
   font-size: 90%;
